@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Discover and Do It!</title>
+    <!-- Linking to external stylesheet -->
+    <link rel="stylesheet" href="../stylesheet/style.css">
+</head>
+<body>
+    <!-- Header section with navigation bar -->
+    <header class="navbar">
+        <!-- Brand name -->
+        <h1 class="brand">Me and My Path</h1>
+    </header>
+    <!-- Section for other links -->
+    <div class="content" id="other-links">
+        <!-- Section title -->
+        <h2 class="section-title">Other Links</h2>
+        <!-- List of other links -->
+        <div><a href="../index.html" aria-label="Home page">Go back to home page / index.html</a></div>
+        <div><a href="../assignment.html">Go back to assignment.html page</a></div>
+        <div><a href="../introduction/introduction.html">introduction.html</a></div>
+        <div><a href="../source_log/sourcelog.html" aria-label="This is the page containing references of images or other content">updated sourcelog.html</a></div>
+        <div><a href="../feedback/feedback.html" aria-label="Filling the table in this page and give your feedback">Welcome to give feedback!</a></div>
+        <div><a href="../validation_report/validation_report.html" aria-label="This is validation report, filling screenshot of validations">Screenshots of validation</a></div>
+        <div><a href="../learn_more/learn_more.html" aria-label="Learn more about this website as well as reflective thoughts">Learn about this website</a></div>
+    </div>
+    
+    <!-- Main content section -->
+    <div class="content">
+        <h2 class="section-title">Click and finish this challenge</h2>
+        <!-- Gallery of clickable cards -->
+        <div class="gallery">
+            <p>Are you free now? There's a little game you can play, you can choose a picture of interest and click on it, a text description will pop up, the challenge is to try to do this thing!</p>
+            <!-- Card for Origami -->
+            <div class="card" onclick="showModal('Explore the art of paper folding through origami, tutorials can be found at Youtube or other platforms.')">
+                <img src="../image/Origami.png" alt="Origami">
+            </div>
+            <!-- Card for Knitting -->
+            <div class="card" onclick="showModal('Knitting can be a relaxing way to pass the time and create your own clothes.')">
+                <img src="../image/Knit.png" alt="Knitting">
+            </div>
+            <!-- Card for Candle Making -->
+            <div class="card" onclick="showModal('Learn to make your own candles with colors. Add some perfume if you want')">
+                <img src="../image/Candlemaking.png" alt="Candle Making">
+            </div>
+            <!-- Card for Yoga -->
+            <div class="card" onclick="showModal('Practice yoga to improve flexibility and reduce stress.')">
+                <img src="../image/Yoga.png" alt="Yoga">
+            </div>
+            <!-- Card for Learning a New Language -->
+            <div class="card" onclick="showModal('Challenge yourself to learn a new language, do not worry, start with simple and short sentences.')">
+                <img src="../image/Newlanguage.png" alt="Learning a New Language">
+            </div>
+            <!-- Card for Magic Tricks -->
+            <div class="card" onclick="showModal('Learn some magic tricks, tutorials can be found at Youtube or other platforms.')">
+                <img src="../image/Magictrick.png" alt="Magic Tricks">
+            </div>
+            <!-- Card for Home Decor -->
+            <div class="card" onclick="showModal('Get creative with home decor and transform your living space')">
+                <img src="../image/Homdecor.png" alt="Home Decor">
+            </div>
+            <!-- Card for Poetry -->
+            <div class="card" onclick="showModal('Write a poetry to express your emotions and maybe send it to your lover or friend.')">
+                <img src="../image/Poetry.png" alt="Poetry">
+            </div>
+            <!-- Card for Cooking New Recipes -->
+            <div class="card" onclick="showModal('Cook a new recipe that you have never tried and eat it! Curry? Pudding?')">
+                <img src="../image/Newrecipe.png" alt="Cooking New Recipes">
+            </div>
+            <!-- Card for Color Filling -->
+            <div class="card" onclick="showModal('Enjoy color filling to relax and create beautiful artworks.')">
+                <img src="../image/Colorfilling.png" alt="Color Filling">
+            </div>
+        </div>
+    </div>
+    <!-- Modal for displaying text description -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <!-- Button to close the modal -->
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <!-- Text description inside the modal -->
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <!-- Script file for modal functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

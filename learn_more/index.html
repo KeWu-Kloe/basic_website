@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character encoding and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Me and My Path</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./stylesheet/style.css" id="theme-style">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="script_index.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <header class="navbar">
+        <!-- Brand/logo -->
+        <h1 class="brand">Me and My Path</h1>
+        <!-- Navigation links -->
+        <div class="links">
+            <a href="#other-links">Other Links</a>
+            <a href="#develop-hobbies">Develop Your Hobbies</a>
+            <a href="#develop-interests">Develop Your Interests</a>
+            <a href="./learn_more/learn_more.html" aria-label="Learn more about this website as well as reflective thoughts">Learn
+                about this website &#x2192;</a>
+        </div>
+    </header>
+    <!-- Call to action section -->
+    <div class="cta-content" id="cta">
+        <!-- Call to action message -->
+        <p>Looking for advice? If you have some questions about your future path and interests, we are here to help.</p>
+        <!-- Button to contact -->
+        <a href="./advice_form/advice_form.html" class="ctaButton">Contact with us now</a>
+        <!-- Close button -->
+        <span class="closeButton">&times;</span>
+    </div>
+
+    <div id="style-switcher" style="position: fixed; z-index: 10000;">
+        <button onclick="switchStyle('./stylesheet/macaron_theme.css')">Switch theme colour</button>
+    </div>
+
+    <!-- Other links section -->
+    <div class="content" id="other-links">
+        <!-- Section title -->
+        <h2 class="section-title">Other Links</h2>
+        <!-- List of other links -->
+        <div><a href="./index.html" aria-label="Home page">Go back to home page / index.html</a></div>
+        <div><a href="./assignment.html">Go back to assignment.html page</a></div>
+        <div><a href="./introduction/introduction.html">introduction.html</a></div>
+        <div><a href="./source_log/sourcelog.html" aria-label="This is the page containing references of images or other content">updated sourcelog.html</a></div>
+        <div><a href="./feedback/feedback.html" aria-label="Filling the table in this page and give your feedback">Welcome to give feedback!</a></div>
+        <div><a href="./validation_report/validation_report.html" aria-label="This is validation report, filling screenshot of validations">Screenshots of validation</a></div>
+        <div><a href="./learn_more/learn_more.html" aria-label="Learn more about this website as well as reflective thoughts">Learn about this website</a></div>
+    </div>
+    <!-- Develop hobbies section -->
+    <div class="content" id="develop-hobbies">
+        <!-- Section title -->
+        <h2 class="section-title">Develop Your Career</h2>
+        <!-- Left item -->
+        <div class="carousel">
+            <div class="carousel-items">
+                <!-- Carousel item: LEGO -->
+                <div class="carousel-item">
+                    <img src="./image/LEGO_logo.svg" alt="This is a LEGO trademark" class="item-img">
+                    <div class="item-description">
+                        <p>Why not buy a LEGO when you finish your work? LEGO stores offer a wide range of IPs. If you
+                            like Star Wars, Minecraft, or Disney, you can build your favorite houses, scenes, or
+                            characters following the instructions. If you are a creative person, you can buy some LEGO
+                            parts and design your own. If you are a LEGO master, you can sign up for a Lego Building
+                            Competition to win a reward back!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/Professional_Organizer.jpeg"
+                        alt="This is a professional organizer and relating work place" class="item-img">
+                    <div class="item-description">
+                        <h3>Professional Organizer</h3>
+                        <p>Do you like to organize your room? Do you have a love for organizing things? Are you a
+                            student in a program like hospitality management?</p>
+                        <p>Professional organizers should gain professional training courses and certificates.</p>
+                        <p>High flexibility at work.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/BookConservation.jpg" alt="This is a book conservator's work place"
+                        class="item-img">
+                    <div class="item-description">
+                        <h3>Book Conservator</h3>
+                        <p>A Book Conservator is primarily responsible for restoring and conserving old or damaged books
+                            and manuscripts to ensure that their historical and cultural value is preserved. The work
+                            often requires fine manual skills, an understanding of chemistry and materials science, and
+                            knowledge of history. A degree in a related field, such as library science, archives, or
+                            conservative restoration, is often required for this career, and further specialized
+                            training and practical experience may be needed.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/FoodStylist.jpg" alt="This is a food modal" class="item-img">
+                    <div class="item-description">
+                        <h3>Food Stylist</h3>
+                        <p>The majority of food stylists are very passionate about what they do and passionate about
+                            food in general. In general, food stylists should love to cook and be great at it. They
+                            should also have an eye for little details. Individuals interested in a food styling career
+                            should be aware that there is no actual degree for food styling specifically.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Carousel navigation arrows -->
+            <button class="carousel-control left-arrow" tabindex="0">&#10094;</button>
+            <button class="carousel-control right-arrow" tabindex="0">&#10095;</button>
+            <!-- Carousel navigation dots -->
+            <div class="carousel-nav">
+                <span class="dot active"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Develop interests section -->
+    <div class="content" id="develop-interests">
+        <!-- Section title -->
+        <h2 class="section-title">Develop Your Hobbies</h2>
+        <!-- Left item -->
+        <div class="item item-img-left">
+            <!-- Image part -->
+            <img src="./image/LEGO_logo.svg" alt="Logo Image" class="item-img">
+            <!-- Description -->
+            <div class="item-description">
+                <p>Why not buy a LEGO when you finish your work? LEGO stores offer a wide range of IPs. If you like Star
+                    Wars, Minecraft, or Disney, you can build your favorite houses, scenes, or characters following the
+                    instructions. If you are a creative person, you can buy some LEGO parts and design your own. If you
+                    are a LEGO master, you can sign up for a Lego Building Competition to win a reward back!</p>
+            </div>
+        </div>
+        <div class="item item-img-right">
+            <!-- Image part -->
+            <img src="./image/Knit" alt="knit Image" class="item-img">
+            <!-- Description -->
+            <div class="item-description">
+                <p>Knitting is done by using two or more needles to knit thread or wool into cloth. Not only does this
+                    activity create warm clothing such as sweaters, scarves and hats, it is also a relaxing and creative
+                    leisure activity. In addition, Knitting is also believed to help reduce stress and anxiety and
+                    enhance hand-eye coordination.</p>
+            </div>
+        </div>
+        <div class="item item-img-left">
+            <!-- Image part -->
+            <img src="./image/Colorfilling" alt="This is a page of a colorfilling book" class="item-img">
+            <!-- Description -->
+            <div class="item-description">
+                <p>Colorfilling, or coloring, is a popular art activity designed to fill in pre-designed black and white
+                    line patterns with color. Suitable for all ages, this activity not only provides creative freedom
+                    and individualized expression, but can also help reduce stress and anxiety. Electronic and
+                    paper-based colorfilling are all have lots of fun! </p>
+            </div>
+        </div>
+        <div class="center-container">
+            <a href="./discover/discover.html" class="button-discover">Discover & Challenge Clicks</a>
+        </div>
+        
+
+    <h2 class="section-title" id = "social-feed">Share your experience</h2>
+    <!-- Place <div> tag where you want the feed to appear -->
+        <div>We'd love to hear about your bold and brave experiences! Share your stories of trying new things on social media and inspire others to step out of their comfort zones. Tag us in your posts and use the hashtag #MeAndMyPath!</div>
+        <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+        <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+        <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function(){
+            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+            i.src="https://cdn.curator.io/published/472b4953-6c7e-4294-834a-f5ab00c8ae9e.js";
+            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+        })();
+        </script>
+    </div>
+
+
+
+
+    <!-- Footer section -->
+    <!-- Second call to action -->
+    <footer class="footer" id="footer">
+        <!-- Copyright information -->
+        <a class="join-our-community" href="./community/community.html">Join Our Community</a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://stuweb.cecs.anu.edu.au/~u7581566/"
+                target="_blank" class="social-icon" >
+                <img src="./image/fb.jpg" alt="Facebook" >
+            </a>
+
+            <a href="https://twitter.com/intent/tweet?url=https://stuweb.cecs.anu.edu.au/~u7581566/index.html&text=Check%20out%20this%20awesome%20site!"
+                target="_blank" class="social-icon">
+                <img src="./image/X.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com/" target="_blank" class="social-icon">
+                <img src="./image/ins.jpg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for closing the call to action box -->
+    <script id="basicJavascript">
+        // Function to close the call to action box
+        document.addEventListener('DOMContentLoaded', function () {
+            var closeButton = document.querySelector('.closeButton');
+            var ctaBox = document.getElementById('cta');
+
+            closeButton.addEventListener('click', function () {
+                ctaBox.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

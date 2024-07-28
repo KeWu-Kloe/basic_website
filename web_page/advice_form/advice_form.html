@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <title>Contact with us</title>
+ </head>
+ <body>
+    <div id="consultation-form" class="container">
+        <h2>Feel free to ask</h2>
+        <form action="mailto:u7581566@anu.edu.au" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="form-group">
+                <label for="user-profession">Your major:</label>
+                <input type="text" id="user-profession" name="profession" required>
+            </div>
+            <div class="form-group">
+                <label for="user-email">Your email:</label>
+                <input type="email" id="user-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="user-question">Your question</label>
+                <textarea id="user-question" name="question" required></textarea>
+            </div>
+            <input type="submit" value="send">
+        </form>
+    </div>
+    
+ </body>
+ </html>

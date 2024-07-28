@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../stylesheet/style.css">
+<title>Feedback Form</title>
+<script>
+  function sendFeedbackViaEmail() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var feedbacktype = document.getElementById('feedback-type').value;
+      var comments = document.getElementById('comments').value;
+      var rating = document.getElementById('rating').value;
+      var emailBody = 'Name: ' + name + '%0D%0A' +
+                      'Email: ' + email + '%0D%0A' +
+                      'Feedback Type: ' + feedbacktype + '%0D%0A' +
+                      'Comments: ' + comments + '%0D%0A' +
+                      'Rating: ' + rating;
+      window.location = 'mailto:u7581566@anu.edu.au?subject=Feedback&body=' + emailBody;
+  }
+  </script>
+</head>
+<body>
+<h2>User Feedback Form</h2>
+<form id = "form-feedback" action=".submit.php" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="feedback-type">Feedback Type:</label><br>
+  <select id="feedback-type" name="feedback_type">
+    <option value="general">How do you feel about this website?</option>
+    <option value="idea">Any good ideas?</option>
+    <option value="problem">Report a Problem</option>
+  </select><br>
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" required></textarea><br>
+  <label for="rating">Welcome to rate our website! 1 - 10!</label><br>
+  <input type="range" id="rating" name="rating" min="1" max="10"><br>
+  <input type="submit" value="Submit Feedback">
+  <button type="button" onclick="sendFeedbackViaEmail()">Send feedback form through Email</button>
+
+</form>
+</body>
+</html>
